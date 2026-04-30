@@ -140,19 +140,31 @@ http://localhost:8000
 ## 📂 Project Structure
 
 ```bash
-Deep_Research_Agent/
+ 📂 Deep_Research_Agent
 │
-├── agents.py
-├── tools.py
-├── pipeline.py
-├── main.py
+├── 📂 App_Screenshot/           # Images/Screenshots of the UI and architecture
+│   └── architecture_img.png     # Architecture diagram you just pushed
 │
-├── templates/
-├── static/
+├── 📂 static/                   # Frontend static assets
+│   ├── 📂 css/
+│   │   └── style.css            # Custom styling for the web interface
+│   └── 📂 js/
+│       └── app.js               # Frontend logic for the SSE stream and UI updates
 │
-├── App_Screenshot/
-├── requirements.txt
-└── .env
+├── 📂 templates/                # HTML templates
+│   └── index.html               # Main user interface for the web app
+│
+├── agents.py                    # LangChain definitions for Search, Reader, Writer, and Critic agents
+├── apitest.py                   # Sandbox/Test script for verifying API connections
+├── main.py                      # FastAPI server & Server-Sent Events (SSE) orchestrator
+├── pipeline.py                  # CLI version of the agent pipeline for terminal execution
+├── tools.py                     # Custom tools (Tavily Search and BeautifulSoup Web Scraper)
+│
+├── requirements.txt             # Python dependencies (fastapi, langchain, bs4, etc.)
+├── run_project.txt              # Quickstart guide and run instructions
+├── .env                         # API Keys (OpenRouter, Tavily, etc.) - Ignored by Git
+└── .gitignore                   # Git exclusions (ignores .venv, .env, and large videos)
+
 ```
  ```mermaid
 graph TD
