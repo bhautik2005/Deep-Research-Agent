@@ -154,36 +154,29 @@ Deep_Research_Agent/
 ├── requirements.txt
 └── .env
 ```
-```mermaid
+ ```mermaid
 graph TD
 
-%% =========================
 %% USER FLOW
-%% =========================
-A[👤 User Input<br/>Research Topic] --> B[🌐 Frontend UI<br/>index.html + app.js]
+A[User Input - Research Topic] --> B[Frontend UI - index.html + app.js]
+B --> C[FastAPI Backend - main.py SSE]
 
-B --> C[⚡ FastAPI Backend<br/>main.py (SSE Streaming)]
-
-%% =========================
 %% CORE PIPELINE
-%% =========================
-C --> D[🔍 Search Agent<br/>Tavily API]
-D --> E[📖 Reader Agent<br/>Web Scraper (BeautifulSoup)]
-E --> F[✍️ Writer Chain<br/>LLM + Prompt Template]
-F --> G[🧠 Critic Chain<br/>Evaluation + Score]
+C --> D[Search Agent - Tavily API]
+D --> E[Reader Agent - BeautifulSoup Scraper]
+E --> F[Writer Chain - LLM + Prompt]
+F --> G[Critic Chain - Evaluation]
 
-G --> H[📄 Final Research Report]
-H --> I[📡 SSE Stream Response]
+G --> H[Final Research Report]
+H --> I[SSE Stream Response]
 I --> B
 
-%% =========================
-%% FILE STRUCTURE
-%% =========================
-subgraph 📂 Project Structure
-    J[agents.py<br/>Agent Logic]
-    K[tools.py<br/>Search + Scraper Tools]
-    L[pipeline.py<br/>CLI Pipeline]
-    M[apitest.py<br/>API Testing]
+%% PROJECT FILES
+subgraph Project_Structure
+    J[agents.py - Agent Logic]
+    K[tools.py - Search + Scraper]
+    L[pipeline.py - CLI Pipeline]
+    M[apitest.py - API Testing]
 end
 
 C --> J
@@ -194,25 +187,21 @@ G --> J
 C --> L
 C --> M
 
-%% =========================
 %% FRONTEND
-%% =========================
-subgraph 🎨 Frontend
+subgraph Frontend
     N[index.html]
     O[style.css]
-    P[app.js (SSE Handler)]
+    P[app.js - SSE Handler]
 end
 
 B --> N
 B --> O
 B --> P
 
-%% =========================
-%% EXTERNAL SERVICES
-%% =========================
-subgraph 🌍 External APIs
+%% EXTERNAL APIs
+subgraph External_APIs
     Q[Tavily API]
-    R[OpenRouter API<br/>LLM (GPT-4o-mini)]
+    R[OpenRouter API - LLM]
     S[Google API]
     T[Mistral API]
 end
@@ -222,10 +211,8 @@ F --> R
 F --> S
 F --> T
 
-%% =========================
-%% ENV CONFIG
-%% =========================
-subgraph 🔐 Environment (.env)
+%% ENV
+subgraph ENV_Config
     U[MISTRAL_API_KEY]
     V[GOOGLE_API_KEY]
     W[TAVILY_API_KEY]
@@ -237,11 +224,10 @@ R --> X
 S --> V
 T --> U
 
-%% =========================
 %% OUTPUT
-%% =========================
-G --> Y[⭐ Score + Feedback]
+G --> Y[Score and Feedback]
 ```
+
 
 
 ---
