@@ -67,6 +67,11 @@ graph TD
 | ![](App_Screenshot/Screenshot%202026-04-30%20162453.png) | ![](App_Screenshot/Screenshot%202026-04-30%20162613.png) |
 
 ---
+ 🤖 Architecture                                            |
+| -------------------------------------------------------- 
+| ![](https://github.com/bhautik2005/Deep-Research-Agent/blob/9f9c20d87696de05f9f8ee6120809afb082065e7/App_Screenshot/architecture_img.png) 
+
+---
 
 ## 🚀 Features
 
