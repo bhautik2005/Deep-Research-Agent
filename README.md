@@ -271,15 +271,6 @@ Impact of war on stock market
 
 ---
 
-## ⚠️ Best Practices
-
-* Do NOT commit `.env` file
-* Use `.gitignore` properly
-* Keep API keys secure
-* Use virtual environment
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome!
