@@ -1,0 +1,69 @@
+# Core LLM + LangChain ecosystem
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langchain-openai>=0.1.0
+
+# LCEL (LangChain Expression Language support)
+langchainhub>=0.1.15
+
+# Google / Gemini API
+google-generativeai>=0.5.0
+
+# Mistral API
+mistralai>=0.4.0
+
+# Tavily Search Tool
+tavily-python>=0.3.3
+
+# HTTP requests + API handling
+requests>=2.31.0
+httpx>=0.27.0
+aiohttp>=3.9.0
+
+# Web scraping (BeautifulSoup)
+beautifulsoup4>=4.12.3
+lxml>=5.2.0
+
+# Async + utilities
+asyncio>=3.4.3
+nest-asyncio>=1.6.0
+
+# Data handling
+pydantic>=2.7.0
+python-dotenv>=1.0.1
+
+# JSON + parsing
+orjson>=3.10.0
+
+# Logging & debugging
+loguru>=0.7.2
+
+# Token counting (important for LLM usage)
+tiktoken>=0.7.0
+
+# Vector store (optional but recommended for memory)
+faiss-cpu>=1.8.0
+chromadb>=0.5.0
+
+# Embeddings support
+sentence-transformers>=2.7.0
+
+# CLI / Dev tools
+typer>=0.12.3
+rich>=13.7.1
+
+# Testing
+pytest>=8.2.0
+
+# Optional: FastAPI if you expose your agent as API
+fastapi>=0.111.0
+uvicorn>=0.30.0
+
+# Optional: Streamlit (if you build UI like your previous project)
+streamlit>=1.35.0
+
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+jinja2==3.1.4
+python-multipart==0.0.9
