@@ -22,7 +22,7 @@ It mimics how a human researcher works using specialized AI agents:
 
 ## 🎥 Demo
 
-👉 [![Watch the video](path/to/your/thumbnail.png)](https://www.linkedin.com/posts/bhautik2005_ai-machinelearning-langchain-ugcPost-7455619688828592128-6AdV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFvcnHwBiXAZNKYD5TX2rA9UBdpN93Fpl78)
+👉 [![Watch the video](https://www.linkedin.com/posts/bhautik2005_ai-machinelearning-langchain-ugcPost-7455619688828592128-6AdV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFvcnHwBiXAZNKYD5TX2rA9UBdpN93Fpl78)
 
 ```text
 [Watch Demo]
